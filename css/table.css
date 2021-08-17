@@ -38,10 +38,6 @@ section div {
     margin-top: 50px;
 }
 
-div input {
-    margin: 6px;
-}
-
 .menu-botton h3 {
     background-color: #000;
     height: 24px;
@@ -100,8 +96,9 @@ h1 {
   
   div input {
     height: 30px;
-    width: 250px;
+    width: 300px;
     font-size: 20px;
+    margin: 6px;
     border: 3px solid #FFF;
     background-color: rgb(4, 73, 58);
     color: #FFF;
