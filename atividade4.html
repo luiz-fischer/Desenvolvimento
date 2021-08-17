@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Atividade 4</title>
+        <link rel="stylesheet" href="..//Nova pasta/css/normalize.css" />
+        <link rel="stylesheet" href="..//Nova pasta/css/reset.css" />
+        <link rel="stylesheet" href="..//Nova pasta/css/grid.css" />
+        <link rel="stylesheet" href="..//Nova pasta/css/table.css" />
+        <link rel="stylesheet" href="..//Nova pasta/css/style.css" />
+        <link rel="stylesheet" href="..//Nova pasta/css/responsivo.css" />
+    </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="grid-12 header_menu">
+          <ul>
+            <li>
+              <a href="atividade1.html">Atividade 1</a>
+            </li>
+            <li><a href="atividade2.html">Atividade 2</a></li>
+            <li><a href="atividade3.html">Home</a></li>
+            <li><a href="atividade4.html" class="menu_ativo">Atividade 4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+        <section  class="menu-top">
+            <h1>Clientes Cadastrados</h1>
+            <table class="table">
+                <thead>
+                    <tr class="titulo">
+                        <th>Cliente</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>E-Mail</th>
+                    </tr>
+                </thead>
+                <tbody class="campo">
+                    <tr>
+                        <td scope="row">Ana Regina</td>
+                        <td>29</td>
+                        <td>Paraná</td>
+                        <td>PR</td>
+                        <td>ana@ana.com</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Fernanda</td>
+                        <td>32</td>
+                        <td>Joinville</td>
+                        <td>SC</td>
+                        <td>fer@ger.com</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Thomaz Silva</td>
+                        <td>18</td>
+                        <td>Rio De Janeiro</td>
+                        <td>RJ</td>
+                        <td>thotho@tho.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="menu-botton">
+            <h3>Cadastrar Novo Cliente</h3>
+            
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" required><br>
+            <label for="dtNasc">Data de Nascimento</label>
+            <input type="date" name="dtNasc" required><br>
+          
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" size="20" required><br>
+            <label for="estado">Estado</label>
+            
+              <select>
+                  <option value="sc">SC</option>
+                  <option value="sp">SP</option>
+                  <option value="rs">RS</option>
+                  <option value="pr">PR</option>
+              </select>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="nome"  size="30" required></td>
+            
+            </div>
+
+            <div style="text-align:center">
+                <button class="button button1" type="submit">Enviar</button>
+                <button class="button button2" type=>Limpar</button>
+              </div>
+        </section>
+          
+    </body>
+</html>

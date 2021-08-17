@@ -1,0 +1,181 @@
+body {
+  color: #FFF;
+  background-color: #1b2e36;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #a8a9af; /* Amarelo */
+  padding: 15px 0;
+  z-index: 10;
+}
+
+.header_menu {
+  text-align: center;
+}
+
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.header_menu ul li a {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.header_menu ul li a:hover {
+  color: #fff;
+}
+
+.header_menu ul li a.menu_ativo {
+  color: #fff;
+}
+
+.introducao_interna {
+  margin-top: 100px;
+  height: 400px;
+}
+
+table {
+  
+  border-collapse: collapse;
+  width: 100%;
+	padding: 6px;
+}
+
+td {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+td, th {
+  padding: 12px;
+  
+}
+
+input[type=radio] {
+  width: 20px;
+  visibility: hidden; 
+  vertical-align: sub;
+  
+}
+
+[type="radio"]::before { 
+  border: 2px solid #FFF; 
+  height: .9em; 
+  width: .9em;  
+  border-radius: 50%; 
+  display: block;
+  content: " "; 
+  cursor: pointer;
+  visibility: visible; 
+}
+
+[type="radio"]:checked::before { 
+  background: radial-gradient(#FFF 50%, transparent 20%);
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+ 
+}
+
+input {
+  height: 25px;
+  font-size: 20px;
+  border: 3px solid #FFF;
+  background-color: #1b2e36;
+  color: #FFF;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+.label2 {
+  text-align: right;
+}
+
+h1 {
+  font-size: 40px;
+  
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button1 {
+  background-color: #1b2e36; 
+}
+
+.button1:hover {
+  background-color: #1b2e36;
+  border: 3px solid #FFF;
+}
+
+.button2 {
+  background-color: #1b2e36; 
+}
+
+.button2:hover {
+  background-color: #1b2e36;
+  border: 3px solid #FFF;
+}
+
+.subtitulo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitulo:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background: #FFF;
+  margin: 8px auto;
+}
+
+.subtitulo:before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background: #FFF;
+  margin: 8px auto;
+}
