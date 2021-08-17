@@ -10,6 +10,30 @@ img {
 }
 
 
+table {
+  
+  border-collapse: collapse;
+  width: 100%;
+	padding: 6px;
+}
+
+td {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+td, th {
+  padding: 12px;
+  
+}
+
+input[type=radio] {
+  width: 20px;
+  visibility: hidden; 
+  vertical-align: sub;
+  
+}
+
 /* Header */
 
 .header {
@@ -51,32 +75,8 @@ img {
 
 .introducao_interna {
   margin-top: 100px;
-  height: 400px;
 }
 
-table {
-  
-  border-collapse: collapse;
-  width: 100%;
-	padding: 6px;
-}
-
-td {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-td, th {
-  padding: 12px;
-  
-}
-
-input[type=radio] {
-  width: 20px;
-  visibility: hidden; 
-  vertical-align: sub;
-  
-}
 
 [type="radio"]::before { 
   border: 2px solid #FFF; 
