@@ -1,5 +1,5 @@
 body {
-  color: #FFF;
+  color: #fff;
   background-color: #1b2e36;
   font-family: Georgia, "Times New Roman", serif;
 }
@@ -10,10 +10,9 @@ img {
 }
 
 table {
-  
   border-collapse: collapse;
   width: 100%;
-	padding: 6px;
+  padding: 6px;
 }
 
 td {
@@ -23,14 +22,32 @@ td {
 
 td, th {
   padding: 12px;
-  
 }
 
-input[type=radio] {
+input[type="radio"] {
   width: 20px;
-  visibility: hidden; 
+  visibility: hidden;
   vertical-align: sub;
-  
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+input {
+  height: 25px;
+  font-size: 20px;
+  border: 3px solid #fff;
+  background-color: #1b2e36;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 /* Header */
@@ -76,47 +93,23 @@ input[type=radio] {
   margin-top: 100px;
 }
 
-
-[type="radio"]::before { 
-  border: 2px solid #FFF; 
-  height: .9em; 
-  width: .9em;  
-  border-radius: 50%; 
+[type="radio"]::before {
+  border: 2px solid #fff;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 50%;
   display: block;
-  content: " "; 
+  content: " ";
   cursor: pointer;
-  visibility: visible; 
+  visibility: visible;
 }
 
-[type="radio"]:checked::before { 
-  background: radial-gradient(#FFF 50%, transparent 20%);
+[type="radio"]:checked::before {
+  background: radial-gradient(#fff 50%, transparent 20%);
 }
-
-label {
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
- 
-}
-
-input {
-  height: 25px;
-  font-size: 20px;
-  border: 3px solid #FFF;
-  background-color: #1b2e36;
-  color: #FFF;
-  font-family: Georgia, "Times New Roman", serif;
-}
-
 
 .label2 {
   text-align: right;
-}
-
-h1 {
-  font-size: 40px;
-  
 }
 
 .button {
@@ -134,21 +127,21 @@ h1 {
 }
 
 .button1 {
-  background-color: #1b2e36; 
+  background-color: #1b2e36;
 }
 
 .button1:hover {
   background-color: #1b2e36;
-  border: 3px solid #FFF;
+  border: 3px solid #fff;
 }
 
 .button2 {
-  background-color: #1b2e36; 
+  background-color: #1b2e36;
 }
 
 .button2:hover {
   background-color: #1b2e36;
-  border: 3px solid #FFF;
+  border: 3px solid #fff;
 }
 
 .subtitulo {
@@ -166,7 +159,7 @@ h1 {
   display: block;
   width: 150px;
   height: 3px;
-  background: #FFF;
+  background: #fff;
   margin: 8px auto;
 }
 
@@ -175,7 +168,7 @@ h1 {
   display: block;
   width: 150px;
   height: 3px;
-  background: #FFF;
+  background: #fff;
   margin: 8px auto;
 }
 
@@ -184,7 +177,9 @@ h1 {
   margin-top: 5%;
   padding-left: 5%;
 }
+
 .home h1 {
   font-size: 150px;
-  letter-spacing:2em;
+  letter-spacing: 2em;
 }
+
