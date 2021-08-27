@@ -1,6 +1,6 @@
 # PRIMEIRA LISTA DE EXERCICIO JAVASCRIPT
 
-1. Tem-se um conjunto de dados contendo a altura e o sexo (M ou F) de 15 pessoas. Faça um programa que calcule e escreva:
+## 1. Tem-se um conjunto de dados contendo a altura e o sexo (M ou F) de 15 pessoas. Faça um programa que calcule e escreva:
 
 - a maior e a menor altura do grupo;
 
@@ -8,7 +8,7 @@
 
 - o número de homens.
 
-2. Cada espectador de um cinema respondeu a um questionário no qual constava sua idade e a sua opinião em relação ao filme: ótimo - 3, bom - 2, regular -1.
+## 2. Cada espectador de um cinema respondeu a um questionário no qual constava sua idade e a sua opinião em relação ao filme: ótimo - 3, bom - 2, regular -1.
 
 Faça um programa que receba a idade e a opinião de 15 espectadores, calcule e imprima:
 
