@@ -1,3 +1,12 @@
+# CRUD 
+
+## Instruções
+
+- Desenvolvimento de um cadastro (CRUD) onde será utilizado um database fake com array e objetos:
+
+- Deverá utilizar conceito de orientação a objetos no javascript e DOM
+- Utilizar pelo menos 3 Métodos (element.innerHtml, element.style, etc) e propriedades (document.getElement...);
+- Utilizar pelo menos 3 eventos (onclick, onmouseout, etc...)
 
 <a href="https://github.com/<USERNAME>" alt="github" target="_blank">
 
