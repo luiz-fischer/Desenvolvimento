@@ -4,9 +4,11 @@ body {
   background: -webkit-linear-gradient(left, #25c481, #25b7c4);
   background: linear-gradient(to right, #25c481, #25b7c4);
 }
+
 table {
   text-align: center !important;
 }
+
 thead {
   background: -webkit-linear-gradient(left, #25c481, #25b7c4);
   background: linear-gradient(to right, #25c481, #25b7c4);
@@ -25,10 +27,13 @@ td {
   text-align: center !important;
   border: 0 !important;
   font-size: 14px;
-  background-color: #ffffff !important;
-  color: rgb(0, 0, 0);
+  color: #FFF;
 }
 
+#productTemplate2 {
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  border-bottom: 1px #fff solid;
+}
 table td {
   border: 0 !important;
 }
@@ -68,3 +73,4 @@ td {
 .panel {
   border: 0 !important;
 }
+
