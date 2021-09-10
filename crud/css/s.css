@@ -1267,7 +1267,7 @@ textarea.form-control {
   .form-horizontal .control-label {
     padding-top: 7px;
     margin-bottom: 0;
-    text-align: right;
+    text-align: center;
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -4482,7 +4482,7 @@ button.close {
 }
 .modal-footer {
   padding: 15px;
-  text-align: right;
+  text-align: center;
   border-top: 1px solid #e5e5e5;
 }
 .modal-footer .btn + .btn {
@@ -4530,7 +4530,7 @@ button.close {
   font-weight: 400;
   line-height: 1.42857143;
   text-align: center;
-  text-align: start;
+  /* text-align: start; */
   text-decoration: none;
   text-shadow: none;
   text-transform: none;
@@ -4648,7 +4648,7 @@ button.close {
   font-weight: 400;
   line-height: 1.42857143;
   text-align: center;
-  text-align: start;
+  /* text-align: start; */
   text-decoration: none;
   text-shadow: none;
   text-transform: none;
@@ -4972,7 +4972,7 @@ button.close {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000\9;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
   border-radius: 10px;
