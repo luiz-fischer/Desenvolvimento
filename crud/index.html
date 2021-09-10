@@ -4,23 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Cadastro de Produtos</title>
-
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" />
-
 </head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Produtos Cadastrados</h2>
+                    <h2 id="title-page">Produtos Cadastrados</h2>
                 </div><!--// .col-md-6 -->
             </div><!--// .row -->
 
             <div class="row">
                 <div class="col-md-6">
-                    <table id="productTable" class="table table-bordered table-condensed table-striped">
+                    <table id="productTable" class="table table-bordered table-condensed table-striped" >
                         <thead>
                         <tr>
                             <th> ID </th>
@@ -37,7 +35,7 @@
 
                 <div class="col-md-6">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">Dados do Produto</div>
+                        <div id="menu" class="panel-heading">Cadastrar Novo Produto</div>
                         <div class="panel-body">
                             <form id="product-form">
 

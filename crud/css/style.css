@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000 !important;
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+}
+table {
+  text-align: center !important;
+}
+thead {
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  color: #fff;
+}
+
+th {
+  text-align: center !important;
+  border: 0 !important;
+  border-bottom: 1px #fff solid !important;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+td {
+  text-align: center !important;
+  border: 0 !important;
+  font-size: 14px;
+  background-color: #ffffff !important;
+  color: rgb(0, 0, 0);
+}
+
+table td {
+  border: 0 !important;
+}
+
+#title-page {
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+  vertical-align: middle !important;
+}
+
+/*** Table Styles **/
+
+td {
+  padding: 20px;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#menu,
+#updateButton {
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#productTable {
+  border: 0;
+}
+
+.panel {
+  border: 0 !important;
+}
