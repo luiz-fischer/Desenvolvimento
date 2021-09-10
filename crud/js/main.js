@@ -1,6 +1,6 @@
-// Próximo ID para adicionar um novo livro
+// Próximo ID para adicionar um novo produto
 let _nextId = 1;
-// ID do livro que está sendo editado
+// ID do produto que está sendo editado
 let _activeId = 0;
 
 const PRODUCT_FORM = $("#product-form");
