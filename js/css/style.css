@@ -1,0 +1,66 @@
+body {
+  background-color: #6495ed;
+}
+
+.imgExercicios {
+  width: 80%;
+  padding-left: 129px;
+  padding-top: 51px;
+}
+
+.imgLogo {
+  height: 150px;
+}
+
+.buttonMenu {
+  width: 200px;
+  color: white;
+  background-color: #6495ed;
+  border: 0;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.buttonMenu:hover {
+  width: 200px;
+  color: white;
+  background-color: rgb(5, 5, 134);
+  border: 0;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.buttonVoltar {
+  width: 150px;
+  color: white;
+  background-color: #10d40a;
+  border: 0;
+  font-size: 18px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  margin-left: 43%;
+}
+
+.buttonVoltar:hover {
+  width: 150px;
+  color: white;
+  background-color: #056902;
+  border: 0;
+  font-size: 18px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  margin-left: 43%;
+}
+
+p {
+  background-color: rgba(0, 0, 255, 0.356);
+  color: white;
+  border: 0;
+  width: 250px;
+  padding-left: 23px;
+}

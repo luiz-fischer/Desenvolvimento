@@ -1,98 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cadastro de Produtos</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" />
-</head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 id="title-page">Produtos Cadastrados</h2>
-                </div><!--// .col-md-6 -->
-            </div><!--// .row -->
+    <link rel="stylesheet" href="/css/responsivo.css" />
+  </head>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <table id="productTable" class="table table-bordered table-condensed table-striped" >
-                        <thead>
-                        <tr>
-                            <th> ID </th>
-                            <th>Nome do Produto</th>
-                            <th>Preço</th>
-                            <th>Quantidade</th>
-                            <th>Editar</th>
-                            <th>Eliminar</th>
-                        </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div><!--// .col-md-6 -->
-
-                <div class="col-md-6">
-                    <div class="panel panel-primary">
-                        <div id="menu" class="panel-heading">Cadastrar Novo Produto</div>
-                        <div class="panel-body">
-                            <form id="product-form">
-
-                                <div class="form-group">
-                                    <label for="product_name">Nome</label>
-                                    <input type="text" name="product_name" id="product_name" class="form-control input-lg"
-                                           placeholder="Nome do Produto">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="product_price">Preço</label>
-                                    <input type="number" step="any" name="product_price" id="product_price" class="form-control input-lg"
-                                           placeholder="Preço do Produto">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="product_quantity">Quantidade</label>
-                                    <input type="number" name="product_quantity" id="product_quantity" class="form-control input-lg"
-                                           placeholder="Quantidade do Produto">
-                                </div>
-
-                                <div class="form-group">
-                                    <button type="submit" id="updateButton" class="btn btn-lg btn-primary">
-                                        Adicionar Produto
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div><!--// .panel -->
-                </div><!--// .col-md -->
-            </div><!--// .row -->
-        </div><!--// .container -->
-
-        <script type="text/html" id="productTemplate">
-            <tr>
-                <td><%- id %></td>
-                <td><%- product_name %></td>
-                <td><%- product_price %></td>
-                <td><%- product_quantity %></td>
-                <td>
-                    <button type='button' class='product-edit btn btn-default' data-id='<%- id %>'>
-                        <span class='glyphicon glyphicon-edit'></span>
-                    </button>
-                </td>
-                <td>
-                    <button type='button' class='product-delete btn btn-default' data-id='<%- id %>'>
-                        <span class='glyphicon glyphicon-remove'></span>
-                    </button>
-                </td>
-            </tr>
-        </script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script> 
-        <script src="js/product-form.js"></script>
-        <script src="js/product-table.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header_menu">
+          <ul>
+            <li><a href="atividade1.html">Atividade 1</a></li>
+            <li><a href="atividade2.html">Atividade 2</a></li>
+            <li><a href="index.html" class="menu_ativo">Home</a></li>
+            <li><a href="atividade4.html">Atividade 4</a></li>
+            <li><a href="atividade5.html">Atividade 5</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      <div class="home">
+        <h1>HOME</h1>
+      </div>
+  </body>
 </html>
