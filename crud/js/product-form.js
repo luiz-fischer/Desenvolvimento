@@ -5,7 +5,7 @@ const productForm = (function($){
     const PRODUCT_UPDATE_BUTTON = $("#updateButton");
 
     function clear() {
-        setData();
+        setData(); 
         PRODUCT_NAME.focus();
     }
 
