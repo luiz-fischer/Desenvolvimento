@@ -1,0 +1,51 @@
+/* Colors */
+$primary: #b221f6;
+$smoke: #f0f0f0;
+$darkPurple: #0e001f;
+
+/* Bootstrap Config */
+$body-bg: $smoke;
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1020px,
+	xxl: 1100px
+);
+
+$utilities: (
+	"min-viewport-height": (
+		property: min-height,
+		class: min-vh,
+		values: (
+			50: 50vh,
+			100: 100vh
+		)
+	),
+	"height": (
+      property: height,
+      class: h,
+      values: (
+		15r: 15rem,
+		30r: 30rem,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+	"opacity": (
+		property: opacity,
+		values: (
+			0: 0,
+			25: 0.25,
+			50: 0.5,
+			60: 0.6,
+			70: 0.7,
+			75: 0.75,
+			100: 1
+		)
+	)
+);

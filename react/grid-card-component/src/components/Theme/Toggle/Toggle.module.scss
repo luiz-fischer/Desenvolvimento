@@ -1,0 +1,59 @@
+$toggle-color: #212529;
+
+.cb {
+	display: none;
+}
+
+.mode {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px;
+
+    &--checked{
+        .border {
+            border-color: #b221f6;
+            background-color:$toggle-color;
+        }
+        .indicator {
+            background-color:white;
+            left: calc( 50px - 18px );
+            transform: rotate(180deg);
+        }
+    }
+}
+.border {
+	border: 1px solid $toggle-color;
+	width: 50px;
+	height: 20px;
+	display: block;
+	border-radius: 20px;
+	position: relative;
+    background-color: #f0f0f087;
+    cursor: pointer;
+}
+
+.indicator {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: $toggle-color;
+	top: 2px;
+	left: 2px;
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	&::after {
+		content: "";
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		position: absolute;
+		bottom: -3px;
+		right: 5px;
+		background-color: $toggle-color;
+	}
+}
+

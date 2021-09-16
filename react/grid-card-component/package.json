@@ -1,0 +1,40 @@
+{
+  "name": "react-card-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-lines-ellipsis": "^0.15.0",
+    "react-multi-select-component": "^4.1.10",
+    "react-uuid": "^1.0.2",
+    "sass": "^1.39.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "autoprefixer": "^10.3.4",
+    "babel-jest": "^27.1.1",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.1.1",
+    "postcss": "^8.3.6",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.0",
+    "react-test-renderer": "^17.0.2"
+  }
+}

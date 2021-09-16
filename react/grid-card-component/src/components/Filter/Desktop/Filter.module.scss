@@ -1,0 +1,13 @@
+/**
+    CSS Module: Desktop filter
+*/
+
+.group {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	overflow: hidden;
+	&--collapsed{
+		height: 2.5rem;
+	}
+}
