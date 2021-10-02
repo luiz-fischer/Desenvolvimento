@@ -18,8 +18,8 @@ body {
   color: rgb(114, 170, 1);
   padding-bottom: 2px;
   padding-top: 5px;
+  margin-bottom: -7px;
 }
-
 
 .media-img {
   width: 40px;
@@ -65,8 +65,7 @@ p {
 }
 
 .btn-cv {
-  position: absolute;
-  bottom: 200px;
+  margin-top: 30px;
   background-color: rgb(114, 170, 1);
   color: #fff;
   height: 30px;
@@ -85,3 +84,26 @@ p {
   border: 0 none;
   text-align: center;
 }
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+
