@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Aula 12 | Formulário Bootstrap - Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                        fill="currentColor" class="bi bi-bricks" viewBox="0 0 16 16">
+                        <path
+                            d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5v-3zM3 4v2h4.5V4H3zm5.5 0v2H13V4H8.5zM3 10v2h4.5v-2H3zm5.5 0v2H13v-2H8.5zM1 1v2h3.5V1H1zm4.5 0v2h5V1h-5zm6 0v2H15V1h-3.5zM1 7v2h3.5V7H1zm4.5 0v2h5V7h-5zm6 0v2H15V7h-3.5zM1 13v2h3.5v-2H1zm4.5 0v2h5v-2h-5zm6 0v2H15v-2h-3.5z" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="cadastro.html">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Cadastro Principal</h1>
+        <form action="">
+            <div class="form-group mt-3 col-sm-3">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="form-control" required>
+            </div>
+            <div class="form-group mt-3 col-sm-3">
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" class="form-control" required>
+            </div>
+            <div class="form-group mt-3 col-sm-3">
+                <label for="genero">Gênero:</label>
+                <select name="genero" id="genero" class="form-control" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outros" selected>Outros</option>
+                </select>
+            </div>
+            <div class="form-group form-check mt-3 col-sm-3">
+                <input type="checkbox" value="Ativo" id="ativo" class="form-check-input">
+                <label for="ativo" class="fomr-check-label">Usuário Ativo</label>
+            </div>
+            <div class="form-group mt-3 col-sm-3">
+                <button type="button" class="btn btn-success" id="btnCadastrar"
+                    onclick="formCadastro()">Cadastrar</button>
+            </div>
+            <div class="form-group mt-3 col-sm-3">
+                <button type="button" class="btn btn-warning" style="display: none;" id="btnEditar"
+                    onclick="Alterar()">Alterar</button>
+            </div>
+        </form>
+
+        <table class="table mt-5" id="tbLista">
+            <caption>Lista de Usuários</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Gênero</th>
+                    <th>Ativo</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function formCadastro() {
+            let nome = document.getElementById("nome");
+            let idade = document.getElementById("idade");
+            let genero = document.getElementById("genero");
+            let ativo = document.getElementById("ativo");
+
+            if ((nome.value != "") && (idade.value != "") && (genero.value != "")) {
+                let tabela = document.getElementById("tbLista");
+                let linha = tabela.insertRow();
+
+                let cel0 = linha.insertCell(0);
+                let cel1 = linha.insertCell(1);
+                let cel2 = linha.insertCell(2);
+                let cel3 = linha.insertCell(3);
+                let cel4 = linha.insertCell(4);
+                let cel5 = linha.insertCell(5);
+
+                cel0.innerHTML = nome.value;
+                cel1.innerHTML = idade.value;
+                cel2.innerHTML = genero.value;
+                if (ativo.checked) {
+                    cel3.innerHTML = ativo.value;
+                } else {
+                    cel3.innerHTML = "-";
+                }
+                cel4.innerHTML = "<button value='Editar' class='btn btn-warning' onclick='formEditar(this)'>Editar</button>";
+                cel5.innerHTML = "<button value='Excluir' class='btn btn-danger' onclick='formExcluir(this)'>Excluir</button>";
+                limparCampos();
+            }
+        }
+
+        function limparCampos() {
+            let nome = document.getElementById("nome");
+            let idade = document.getElementById("idade");
+            let genero = document.getElementById("genero");
+            let ativo = document.getElementById("ativo");
+
+            nome.value = "";
+            idade.value = "";
+            genero.value = "";
+            ativo.checked = false;
+        }
+
+        function formExcluir(obj) {
+            let confirma = confirm("Deseja Excluir?");
+
+            if (confirma) {
+                obj.parentNode.parentNode.remove();
+            }
+
+            limparCampos();
+        }
+
+        var arrayChild = "";
+        function formEditar(obj) {
+            arrayChild = obj.parentNode.parentNode.childNodes;
+
+            let nome = document.getElementById("nome");
+            let idade = document.getElementById("idade");
+            let genero = document.getElementById("genero");
+            let ativo = document.getElementById("ativo");
+
+            nome.value = arrayChild[0].innerText;
+            idade.value = arrayChild[1].innerText;
+            genero.value = arrayChild[2].innerText;
+            if (arrayChild[3].innerText != "") {
+                ativo.checked = true;
+            } else {
+                ativo.checked = false;
+            }
+
+            let btnCadastrar = document.getElementById("btnCadastrar").style.display = "none";
+            let btnEditar = document.getElementById("btnEditar").style.display = "block";
+
+        }
+        function Alterar() {
+            let nome = document.getElementById("nome");
+            let idade = document.getElementById("idade");
+            let genero = document.getElementById("genero");
+            let ativo = document.getElementById("ativo");
+
+            arrayChild[0].innerText = nome.value;
+            arrayChild[1].innerText = idade.value;
+            arrayChild[2].innerText = genero.value;
+            if (ativo.checked) {
+                arrayChild[3].innerText = ativo.value;
+            } else {
+                arrayChild[3].innerText = "-";
+            }
+
+            let btnCadastrar = document.getElementById("btnCadastrar").style.display = "block";
+            let btnEditar = document.getElementById("btnEditar").style.display = "none";
+
+            limparCampos();
+        }
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

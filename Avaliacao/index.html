@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portifólio</title>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="//www.google.com.br">
+    <img src="/Avaliacao/img/home.png" width="30" height="30" id="home-svg" alt="">
+  </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="dropdown-item">
+        <a class="nav-link" href="/Avaliacao/inicial.html">Inicial</a>
+      </li>
+      <li class="dropdown-item">
+        <a class="nav-link active" href="/Avaliacao/index.html">Portifólio</a>
+      <li class="dropdown-item">
+          <a class="nav-link" href="/Avaliacao/sobre.html">Sobre</a>
+      </li>
+        </div>
+    </ul>
+  </div>
+</nav>
+<div class="container profile">
+  <div class="row">
+    <div class="col-sm section">
+      <div class"photo-box">
+        <img id="perfil" src="/Avaliacao/img/foto.jpg" width="300" height="300" alt="">
+    </div>
+    </div>
+    <div class="col-sm section text-green">
+      <h1 class="text-green" style="font-size:80px">Olá,</h1>
+       <h3 class="text-green">Dispónivel no Mercado</h3>
+    <p style="color: #000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <a href="//www.github.com/luiz-fischer">
+        <button type="button" class="btn-cv">Meu CV</button></a>
+      
+    </div>
+    <div class="col-sm section">
+    
+      <h5 class="text-green">Disponível para:</h5>
+      <p>Gestão de Projetos</p>
+      <p>Consultoria</p>
+      <p>Estratégia e Marketing</p>
+      <p>Inteligência Comercial</p>
+
+      <p class="text-green">Website:</p>
+      <p>www.google.com.br</p>
+
+      <p class="text-green">Cel:</p>
+      <p>(11) 9999-1010</p>
+
+      <p class="text-green">Email:</p>
+      <p>email@email.com.br</p>
+
+     <p class="text-green">Redes Sociais:</p>
+    <a href="//www.facebook.com"><img src="/Avaliacao/img/facebook.png" class="media-img  img-responsive img-thumbnail"></a>
+    <a href="//www.instagram.com"><img src="/Avaliacao/img/instagram.png" class="media-img  img-responsive img-thumbnail"></a>
+    <a href="//www.twitter.com"><img src="/Avaliacao/img/twitter.png" class="media-img  img-responsive img-thumbnail"></a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-sm">
+      <h5 class="text-green">DEPOIMENTO</h5>
+      <span> "Este é um depoimento sem nenhum sentido" </span>
+      </div>
+      <div class="col-sm box-center">
+      <h5 class="text-green ">CITAÇÃO FAVORITA</h5>
+      <span> "Este é um depoimento sem nenhum sentido" </span>
+      </div>
+      <div class="col-sm">
+      <h5 class="text-green">ULTÍMO PROJETO</h5>
+      <span> "Este é um depoimento sem nenhum sentido" </span>
+      </div>
+  </div>
+</div>
+
+  <div class="container">
+        <h1>Faça a sua pergunta:</h1>
+        <form action="">
+            <div class="form-group mt-6 col-sm-6">
+                <textarea name="pergunta" id="pergunta" rows="3" cols="1" class="form-control" required></textarea>
+            </div>
+            <div class="form-group mt-3 col-sm-3">
+                <button type="button" class="btn btn-success" id="btnCadastrar"
+                    onclick="formCadastro()">Cadastrar</button>
+            </div>
+            <div class="form-group mt-3 col-sm-3">
+                <button type="button" class="btn btn-warning" style="display: none;" id="btnEditar"
+                    onclick="Alterar()">Alterar</button>
+            </div>
+        </form>
+
+        <table class="table mt-5" id="tbLista">
+            <thead>
+                <tr>
+                    <th>Lista de Perguntas</th>
+                </tr>
+            </thead>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/Avaliacao/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></>
+  </body>
+</html>
