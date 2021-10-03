@@ -1,6 +1,12 @@
 body {
 }
+a:hover {
+  background-color: yellow !important;
+}
+li:hover {
+  background-color: yellow !important;
 
+}
 .section {
   background-color: rgba(207, 204, 204, 0.336);
   width: 100%;
