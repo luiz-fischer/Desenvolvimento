@@ -1,16 +1,13 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  $("#main").hide();
 
-    // $('section > div > div h1').hide();
+  let mostrar = this.value;
 
-    // $('button').click(function() {
-    //     $('#spanHide').hide();
-    // });
-
-    $('span').html("<p>Mudei para novo texto</p>");
-    
+  $("#search").keyup(function () {
+    if ((mostrar = "Mostrar")) {
+      $("#main").show();
+    } else {
+      $("#main").hide();
+    }
+  });
 });
-
-
-
-
-
