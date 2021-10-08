@@ -1,13 +1,11 @@
 $(document).ready(function () {
-  $("#main").hide();
-
-  let mostrar = this.value;
-
-  $("#search").keyup(function () {
-    if ((mostrar = "Mostrar")) {
-      $("#main").show();
-    } else {
-      $("#main").hide();
-    }
+  $("input[id!='primeiroNome']").attr('readonly', true)
+   
+  $('input').on('input propertychange', function () {
+      if ($(this).val() == "") {
+          $("input[id!='primeiroNome']").attr('readonly', true)
+      } else {
+          $("input").attr('readonly', false)
+      }
   });
 });

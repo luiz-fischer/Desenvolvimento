@@ -21,73 +21,95 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        
+        <div class="col-md-8 order-md-1">
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <label for="primeiroNome">Nome</label>
+                <input type="text" class="form-control" id="primeiroNome" placeholder="Primeiro nome" value="" required>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um nome válido.
+                </div>
+              </div>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Desativado</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Item</a>
-              <a class="dropdown-item" href="#">Outro item</a>
-              <a class="dropdown-item" href="#">Algum outro item</a>
+              <div class="col-md-6 mb-3">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um sobre nome válido.
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" id="search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-        </form>
-      </div>
-    </nav>
 
-    <main role="main" id="main">
+            <div class="mb-3">
+              <label for="nickname">Nickname</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="nickname" placeholder="Nickname" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Seu nickname é obrigatório.
+                </div>
+              </div>
+            </div>
 
-      <!-- Principal jumbotron, para a principal mensagem de marketing ou call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Olá, mundo!</h1>
-          <p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. Use-o como um ponto de partida para algo mais peculiar.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais &raquo;</a></p>
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com">
+              <div class="invalid-feedback">
+                Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="endereco">Endereço</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Rua dos bobos, nº 0" required>
+              <div class="invalid-feedback">
+                Por favor, insira seu endereço de entrega.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="endereco2">Endereço 2 <span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="endereco2" placeholder="Apartamento ou casa">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="pais">País</label>
+                <select class="custom-select d-block w-100" id="pais" required>
+                  <option value="">Escolha...</option>
+                  <option>Brasil</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, escolha um país válido.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="estado">Estado</label>
+                <select class="custom-select d-block w-100" id="estado" required>
+                  <option value="">Escolha...</option>
+                  <option>Acre</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, insira um estado válido.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" placeholder="" required>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um CEP.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue o checkout</button>
+          </form>
         </div>
       </div>
-
-      <div class="container">
-        <!-- Exemplo de linha de colunas -->
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Título</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Título</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Título</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div>
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
 
     </main>
 
