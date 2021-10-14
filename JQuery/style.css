@@ -1,0 +1,29 @@
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+    border: 1px #000000;
+    border-radius: 2px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FFFFFF;
+    font-size: 23px;
+    background-color: #000000;
+}
+.nav a.active {
+    color: black;
+    background-color: red;
+}
+
+#navbar {
+    color: #e02d2d;
+}
