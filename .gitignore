@@ -1,2 +1,6 @@
 /crud2
 /Crud-JS
+*.zip
+!a.zip
+*.gitignore
+!a.gitignore
