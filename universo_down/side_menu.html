@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,7 +17,6 @@
 
   </head>
   <body>
-  
     <aside class="sidebar">
       <div class="toggle">
         <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
@@ -40,10 +39,20 @@
             <input type="text" class="form-control" placeholder="Pesquisar...">
           </form>
         </div>
-        <div class="nav-menu">
+        
+        <div class="nav-menu side-menu">
           <ul>
-            <li class="active"><a href="#" class="d-flex align-items-center"><span class="wrap-icon fa fa-home mr-3"></span><span class="menu-text">Pagina Inicial</span></a></li>
-            <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon fa fa-heartbeat mr-3"></span><span class="menu-text">Paciente</span></a></li>
+            <li><a href="index.html" class="d-flex align-items-center">
+            <span class="wrap-icon fa fa-home mr-3"></span>
+            <span class="menu-text">Pagina Inicial</span></a></li>
+            <li><a href="" class="d-flex align-items-center">
+            <span class="wrap-icon fa fa-heartbeat mr-3"></span>
+            <span class="menu-text">Paciente</span></a>
+              <ul class="sub-menu">
+                  <li><a href="#" onclick="(window.location='paciente.html')">Cadastro de Pacientes</a></li>
+                  <li><a href="#">Listar Pacientes</a></li>
+                  <li><a href="#">Editar Pacientes</a></li>
+              </ul></li>
             <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon fa fa-user-md mr-3"></span><span class="menu-text">Médico</span></a></li>
             <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon fa fa-medkit mr-3"></span><span class="menu-text">Espcialidade</span></a></li>
             <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon 	fa fa-hospital-o mr-3"></span><span class="menu-text">Consulta</span></a></li>
@@ -54,21 +63,9 @@
       
     </aside>
     <main>
-      <div class="site-section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="d-flex post-entry">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
+       
     </main>
+    <!-- JS -->
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -6,8 +6,6 @@ $(function() {
 
   	var $this = $(this);
 
-  	
-
   	if ( $('body').hasClass('show-sidebar') ) {
   		$('body').removeClass('show-sidebar');
   		$this.removeClass('active');

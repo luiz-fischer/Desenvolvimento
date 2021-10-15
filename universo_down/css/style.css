@@ -68,14 +68,15 @@ body.show-sidebar:before {
 }
 
 .site-section {
-  padding: 7rem 0;
+  padding: 3rem 0;
+  text-align: center;
 }
 
-aside,
+/* aside,
 main {
-  height: 100vh;
-  min-height: 580px;
-}
+  height: 10vh;
+  min-height: 880px;
+} */
 
 aside {
   width: 70px;
@@ -223,7 +224,7 @@ aside .side-inner .nav-menu ul li a {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #b1b1b1;
+  color: #b1b1b1; 
   position: relative;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -236,7 +237,7 @@ aside .side-inner .nav-menu ul li a:hover {
 }
 aside .side-inner .nav-menu ul li a:hover {
   color: #000;
-  background: #f4f4f4;
+  background: #2980b9;;
 }
 aside .side-inner .nav-menu ul li a .wrap-icon {
   font-size: 1.2rem;
@@ -391,10 +392,47 @@ main .post-content .post-meta {
   outline: none;
 }
 
-.agenda {
-    display: inline-block;
-    font-size: inherit;
-    height: 1em;
-    overflow: visible;
-    vertical-align: -.125em;
+.box {
+  width: 100%;
+  height: 600px;
+  background-color: #fff;
+}
+
+div.side-menu{
+}
+div.side-menu > ul > li{
+}
+div.side-menu > ul > li:last-child{
+}
+div.side-menu > ul > li > a,
+div.side-menu > ul > li{
+    font-size: 18px;
+}
+div.side-menu > ul > li:hover > a,
+div.side-menu > ul > li.active > a{
+    color: #fff;
+    background: #2980b9;
+}
+div.side-menu > ul > li.active i.drop-icon{
+
+}
+
+div.side-menu > ul > li > a{
+  display: block;
+}
+div.side-menu > ul > li .sub-menu{
+    display: none;
+}
+div.side-menu > ul > li .sub-menu li{
+}
+div.side-menu > ul > li .sub-menu li:hover{
+}
+div.side-menu > ul > li .sub-menu li a{
+
+}
+div.side-menu > ul > li .sub-menu li:hover a{
+
+}
+div.side-menu > ul > li i{
+
 }
