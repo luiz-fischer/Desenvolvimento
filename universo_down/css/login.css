@@ -1,0 +1,151 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(243, 243, 243);
+  text-transform: uppercase;
+}
+
+img {
+}
+
+#login {
+  display: flex;
+  align-items: center;
+  height: 33.3vh;
+  width: 6vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body .card { 
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgb(60, 153, 165);
+  opacity: 0.8;
+  padding: 100px;
+  border-radius: 2px;
+}
+
+.card-header {
+  padding-bottom: 50px;
+  opacity: 0.8;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.card-header::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  display: block;
+  padding-bottom: 0;
+  margin: 12px auto;
+}
+
+.card-content label {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
+.card-content-area {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.card-content-area input {
+  margin-top: 10px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  outline: none;
+  color: #fff;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer .submit {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(244, 176, 95);
+  border: none;
+  color: #ffffff;
+  margin: 10px 0; 
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-footer a {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+img.image-login {
+ 
+}
+
+#login-img {
+}
+
+#DivLateral{
+  position:relative;
+  border-width:2px;
+  background-color: transparent;
+  float: right;
+  right: -67px;
+  top: -270px;
+}
+
+#DivA{
+  position: relative;
+  border-width: 0;
+  width: 400px;
+  height: 400px;
+  right: -200pxpx;
+  background-image: url('../img/img_1.png');
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  float: right;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+} 
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #6C7A89;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .box {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  }
+  body {
+  margin: 0px;
+  }

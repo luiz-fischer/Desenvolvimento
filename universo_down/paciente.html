@@ -14,18 +14,77 @@
     <title>Universo Down</title>
   </head>
   <body>
+    <!-- MENU -->
     <div id="nav-placeholder"></div>
     
-      <main> 
-        <div class="site-section">
-          <div class="container">
-            <div class="col-md-12">
-              <div class="box"> <h1>PACIENTE</h1> </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      
+    <!-- FORM -->
+      <div class="container">
+        <div class="row col">
+        <section class="introducao_interna body-cadastro col"> 
+          <div class="col">
+              <tr>
+                <th class="th-cadastro"><h1 class="subtitulo">Cadastro de Paciente</h1></th>
+              </tr>
+              <tr>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="nome">Nome</label></td>
+                <td class="td-cadastro"><input class="input-cadastro" type="text" name="nome"  required></td>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="dtNasc">Data de Nascimento</label></td>
+                <td class="td-cadastro"><input class="input-cadastro" type="date" name="dtNasc" required></td>
+              </tr></div>
+              <div class="col">
+              <tr>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="cpf">CPF</label></td>
+                <td class="td-cadastro"><input class="input-cadastro" type="number" name="nome" required></td>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="rg">RG</label></td>
+                <td class="td-cadastro"><input class="input-cadastro" type="number" name="RG" required></td>
+              </tr></div>
+              <div class="col">
+              <tr>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="endereco">Endereço</label></td>
+                <td ><input class="input-cadastro" type="text" name="nome" required></td>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="telefone">Telefone</label></td>
+                <td class="td-cadastro"><input class="input-cadastro" type="number" name="telefone" required></td>
+              </tr></div>
+              <div class="col">
+              <tr>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="cidade">Cidade</label></td>
+                <td class="td-cadastro"><input class="input-cadastro" type="text" name="nome" size="40" required></td>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="estado">Estado</label></td>
+                <td class="td-cadastro">
+                  <select>
+                      <option value="sc">SC</option>
+                      <option value="sp">SP</option>
+                      <option value="rs">RS</option>
+                      <option value="pr">PR</option>
+                  </select>
+                </td>
+              </tr></div>
+              <div class="col">
+              <tr>
+                <td class="label2 td-cadastro"><label class="label-cadastro" for="sexo">Sexo</label></td>
+                <tdspan="4"><input class="input-cadastro" type="radio"  name="sexo" value="HTML"> Masculino
+                <input class="input-cadastro" type="radio" name="sexo" value="HTML"> Feminino</td>
+              </tr></div>
+              <div class="col">
+              <tr>
+                <td class="label2 td-cadastro col"><label class="label-cadastro" for="email">E-mail</label></td>
+                <td class="td-cadastro col"><input class="input-cadastro" type="email" name="nome"  size="40" required></td><br>
+                <td class="label2 td-cadastro col"><label class="label-cadastro" for="senha">Senha</label></td>
+                <td class="td-cadastro col"><input class="input-cadastro" type="password" name="pwd"></td>
+              </tr>
+              <tr class="col">
+                <td>
+                  <div style="text-align:center">
+                    <button class="button button1" type="submit">Enviar</button>
+                    <button class="button button2" type=>Limpar</button>
+                  </div>
+                </div>
+                </td>
+              </tr>
+        </section>
+      </div>
+    </div> 
+
     <!-- JS -->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/script.js"></script>
