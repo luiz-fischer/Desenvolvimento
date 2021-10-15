@@ -1,0 +1,10 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin-left: -30%; /* metade da largura */
+    margin-top: -15%; /* metade da altura */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid red;
+  }
