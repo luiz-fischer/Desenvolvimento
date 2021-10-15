@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cadastro Paciente</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+   
+        <section class="introducao_interna body-cadastro"> 
+          <form>
+            <table>
+              <tr>
+                <th colspan="4"><h1 class="subtitulo">Cadastro de Paciente</h1></th>
+              </tr>
+              <tr>
+                <td class="label2"><label for="nome">Nome</label></td>
+                <td><input type="text" name="nome" size="100" required></td>
+                <td class="label2"><label for="dtNasc">Data de Nascimento</label></td>
+                <td><input type="date" name="dtNasc" required></td>
+              </tr>
+              <tr>
+                <td class="label2"><label for="cpf">CPF</label></td>
+                <td><input type="number" name="nome" required></td>
+                <td class="label2"><label for="rg">RG</label></td>
+                <td><input type="number" name="RG" required></td>
+              </tr>
+              <tr>
+                <td class="label2"><label for="endereco">Endereço</label></td>
+                <td ><input type="text" name="nome" size="100" required></td>
+                <td class="label2"><label for="telefone">Telefone</label></td>
+                <td><input type="number" name="telefone" required></td>
+              </tr>
+              <tr>
+                <td class="label2"><label for="cidade">Cidade</label></td>
+                <td><input type="text" name="nome" size="40" required></td>
+                <td class="label2"><label for="estado">Estado</label></td>
+                <td>
+                  <select>
+                      <option value="sc">SC</option>
+                      <option value="sp">SP</option>
+                      <option value="rs">RS</option>
+                      <option value="pr">PR</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="label2"><label for="sexo">Sexo</label></td>
+                <td colspan="4"><input type="radio"  name="sexo" value="HTML"> Masculino
+                <input type="radio" name="sexo" value="HTML"> Feminino</td>
+              </tr>
+              <tr>
+                <td class="label2"><label for="email">E-mail</label></td>
+                <td><input type="email" name="nome"  size="40" required></td>
+                <td class="label2"><label for="senha">Senha</label></td>
+                <td><input type="password" name="pwd"></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <div style="text-align:center">
+                    <button class="button button1" type="submit">Enviar</button>
+                    <button class="button button2" type=>Limpar</button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </section>
+    </div>
+  </body>
+</html>
