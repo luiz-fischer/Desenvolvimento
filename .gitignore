@@ -4,3 +4,4 @@
 !a.zip
 *.gitignore
 !a.gitignore
+/nodeJs/teste/node_modules
