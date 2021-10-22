@@ -1,0 +1,17 @@
+<h2> LISTA DE MEDICOS</h2>
+<hr>
+<a href="/admin/medicos/add"><button class="btn btn-success">Nova Medico</button></a>
+{{#each medicos}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4>Nome: {{nome}}</h4>
+            <p>Sobrenome: {{sobrenome}}</p>
+            <p>CRM: {{crm}}</p>
+            <p>Telefone: {{telefone}}</p>
+            <p>Especialidade: {{especialidade}}</p>
+            <a href="/admin/medicos/edit/{{_id}}"><button class="btn btn-success mt-3">Editar Medico</button></a>
+            <a href="/admin/medicos/deletar/{{_id}}"><button class="btn btn-danger mt-3">Deletar Medico</button></a>
+    </div>
+{{else}}
+    <p>Nenhum medico registrado</p>
+{{/each}}
