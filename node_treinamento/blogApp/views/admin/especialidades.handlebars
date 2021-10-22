@@ -1,0 +1,21 @@
+<h2> LISTA DE ESPECIALIDADES</h2>
+<hr>
+<a href="/admin/especialidades/add">
+<button class="btn btn-success">Nova Especialidade</button></a>
+
+{{#each especialidades}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4>Nome da Especialidade: {{nome}}</h4>
+            <small>Descrição da Especialidade: {{descricao}}</small><br>
+            <a href="/admin/especialidades/edit/{{_id}}">
+                <button class="btn btn-success mt-4">Editar</button></a>
+            <form action="/admin/especialidades/deletar" method="POST">
+                <input type="hidden" name="id" value="{{_id}}">
+                <button type="submit" class="btn btn-danger mt-2">Deletar</button>
+            </form>
+        </div>
+    </div>
+{{else}}
+    <h4 class="mt-3">Nenhuma Especialidade Registrada</h4>
+{{/each}}

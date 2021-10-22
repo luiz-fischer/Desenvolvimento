@@ -1,0 +1,27 @@
+{{#each erros}}
+  <div class="alert alert-danger">{{texto}}{{erros}}</div>
+{{else}}
+
+{{/each}}
+    <h4>Novo Medico</h4>
+    <form action="/admin/medicos/nova" method="POST">
+      <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" class="form-control" required>
+      <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" class="form-control" required>
+      <label for="crm">CRM:</label>
+        <input type="number" id="crm" name="crm" class="form-control" required>
+      <label for="telefone">Telefone:</label>
+        <input type="number" id="telefone" name="telefone" class="form-control" required>
+      
+      <label for="especialidade">Especialidade:</label>
+      <select name="especialidade" class="form-select">
+          {{#each especialidades}}
+            <option value="{{_id}}">{{nome}}</option>
+          {{else}}
+            <option value="0">Nenhuma Especialidade registrada</option>
+          {{/each}}
+      </select>
+      <button type="submit" class="btn btn-success mt-4">Criar Medico</button>
+    </form>
+  </div>
